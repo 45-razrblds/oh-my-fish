@@ -1,11 +1,12 @@
-> ⚠️ Oh My Fish has been unmaintained for years, and certain parts of it may not work for you. A few themes and packages are currently broken, and the code is due a significant overhaul. The current set of maintainers have ran out of steam, so if you are interested in becoming a maintainer send an email to *oh-my-fish [at] googlegroups.com*.
+> ⚠️ Oh My Fish has been unmaintained for years, and certain parts of it may not work for you. This is why I'm trying to fix it myself.
+> I mean - I will probably also stop working on this when I dont want to anymore but I at **least** want to fix the uninstall script and make it compatible with the latest Fish version. 
 
-<img src="https://cdn.rawgit.com/oh-my-fish/oh-my-fish/e4f1c2e0219a17e2c748b824004c8d0b38055c16/docs/logo.svg" align="left" width="192px" height="192px"/>
+<img src="https://cdn.rawgit.com/45-razrblds/oh-my-fish/e4f1c2e0219a17e2c748b824004c8d0b38055c16/docs/logo.svg" align="left" width="192px" height="192px"/>
 <img align="left" width="0" height="192px" hspace="10"/>
 
 > The <a href="http://fishshell.com">Fishshell</a> Framework
 
-[![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE) [![Fish Shell Version](https://img.shields.io/badge/fish-≥v2.2.0-007EC7.svg?style=flat-square)](http://fishshell.com) [![Build](https://github.com/oh-my-fish/oh-my-fish/workflows/Build/badge.svg)](https://github.com/oh-my-fish/oh-my-fish/actions?query=workflow%3ABuild)
+[![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE) [![Fish Shell Version](https://img.shields.io/badge/fish-≥v2.2.0-007EC7.svg?style=flat-square)](http://example.com) [![Build](https://github.com/45-razrblds/oh-my-fish/workflows/Build/badge.svg)](https://github.com/45-razrblds/oh-my-fish/actions?query=workflow%3ABuild)
 
 
 Oh My Fish provides core infrastructure to allow you to install packages which extend or modify the look of your shell. It's fast, extensible and easy to use.
@@ -33,31 +34,31 @@ Oh My Fish provides core infrastructure to allow you to install packages which e
 You can get started right away with the default setup by running this in your terminal:
 
 ```fish
-curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+curl https://raw.githubusercontent.com/45-razrblds/oh-my-fish/master/bin/install | fish
 ```
 
 This will download the installer script and start the installation. Alternatively, you can download the installer and customize your install:
 
 ```fish
-curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install > install
+curl https://raw.githubusercontent.com/45-razrblds/oh-my-fish/master/bin/install > install
 fish install --path=~/.local/share/omf --config=~/.config/omf
 ```
 
 You can verify the integrity of the downloaded installer by verifying the script against [this checksum](bin/install.sha256):
 
 ```
-curl -sL https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install.sha256 | shasum -a 256 --check
+curl -sL https://raw.githubusercontent.com/45-razrblds/oh-my-fish/master/bin/install.sha256 | shasum -a 256 --check
 ```
 
 You can also install Oh My Fish with Git or with an offline source tarball downloaded from the [releases page][releases]:
 
 ```fish
 # with git
-$ git clone https://github.com/oh-my-fish/oh-my-fish
+$ git clone https://github.com/45-razrblds/oh-my-fish
 $ cd oh-my-fish
 $ bin/install --offline
 # with a tarball
-$ curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install > install
+$ curl https://raw.githubusercontent.com/45-razrblds/oh-my-fish/master/bin/install > install
 $ fish install --offline=omf.tar.gz
 ```
 
@@ -72,7 +73,7 @@ Run `install --help` for a complete list of install options you can customize.
 
 - Due to a regression bug in fish 2.6 with some terminal emulators, right prompts make the shell unusable.
   OMF's `default` theme features a right prompt, so it's necessary to use an alternative theme until a fix is released.
-  (see [#541](https://github.com/oh-my-fish/oh-my-fish/issues/541))
+  (see [#541](https://github.com/45-razrblds/oh-my-fish/issues/541))
 
 
 ## Getting Started
@@ -211,7 +212,7 @@ type in `fish-spec`. If your tests are in different files you can also list your
 like so: `fish-spec tests/test_*.fish other-tests/foo.fish`
 
 For syntax and available assertions see the tests for the fish-spec package in
-[pkg/fish-spec/spec/](https://github.com/oh-my-fish/oh-my-fish/tree/master/pkg/fish-spec/spec).
+[pkg/fish-spec/spec/](https://github.com/45-razrblds/oh-my-fish/tree/master/pkg/fish-spec/spec).
 
 ## Creating Packages
 
@@ -219,7 +220,7 @@ Oh My Fish uses an advanced and well defined plugin architecture to ease plugin 
 
 
 [fishshell]: http://fishshell.com
-[contributors]: https://github.com/oh-my-fish/oh-my-fish/graphs/contributors
-[omf-pulls-link]: https://github.com/oh-my-fish/oh-my-fish/pulls
-[omf-issues-new]: https://github.com/oh-my-fish/oh-my-fish/issues/new
-[releases]: https://github.com/oh-my-fish/oh-my-fish/releases
+[contributors]: https://github.com/45-razrblds/oh-my-fish/graphs/contributors
+[omf-pulls-link]: https://github.com/45-razrblds/oh-my-fish/pulls
+[omf-issues-new]: https://github.com/45-razrblds/oh-my-fish/issues/new
+[releases]: https://github.com/45-razrblds/oh-my-fish/releases
